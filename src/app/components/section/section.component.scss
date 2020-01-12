@@ -7,3 +7,32 @@
     width: 100%;
     border-radius: 10px;
 }
+
+h2{
+   font-family: 'Montserrat',sans-serif;
+   font-size:40px;
+   font-weight: bold;
+}
+
+h1{
+    position:relative;
+    padding-bottom:10px;
+}
+
+h1:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:calc(50% - 50px);
+    width:100px;
+    border-bottom: 2px solid rgb(27, 143, 189);
+}
+
+.about-me{
+    font: 18px/29px 'Raleway',Arial,sans-serif;
+    font-weight: 300;
+    color: gray;
+    text-align: center;
+    max-width: 550px;
+    margin: auto auto 80px auto;
+}
