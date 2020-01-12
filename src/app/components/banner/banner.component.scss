@@ -19,17 +19,29 @@
 
 .description{
     color:rgba(255,255,255,1);
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 
 .button{
-    width:100px;
-    margin:auto;
+    width: 100px;
+    margin: auto;
 }
 
 .button button{
     width: 100%;
     border: 2px solid white;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
+}
+
+.icon-contact{
+    width: 100px;
+}
+
+.icon-contact a{
+    font-size: 20px;
+}
+
+.icon-contact i:hover{
+    color: rgba(255, 255, 255, 0.5);
 }
