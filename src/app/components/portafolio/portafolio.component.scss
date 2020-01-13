@@ -1,0 +1,60 @@
+h1{
+    position:relative;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    border: 1px solid rgb(27, 143, 189);
+    bottom:0;
+    left: calc(50% - 50px);
+}
+
+p{
+    font-size:18px;
+    color:rgb(167, 167, 167);
+}
+
+.pro{
+    position:relative;
+    height: 300px;
+    padding:0;
+}
+
+.description:hover{
+    opacity:1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pro img{
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    color:white;
+    padding:50px;
+    opacity: 0;
+    transition:ease 0.5s opacity;
+    z-index:1;
+
+}
+
+@media (max-width: 700px) {
+
+    .description{
+        padding:30px;
+    }
+
+    h2{
+        font-size:25px;
+    }
+}
