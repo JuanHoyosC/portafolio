@@ -1,0 +1,67 @@
+/*--------------------------------COL-UNO-------------*/
+
+.col-one h3, i {
+    font-size:25px;
+}
+
+.col-one i{
+    color:rgb(27, 143, 189);
+}
+
+.col-one p{
+    text-align: justify;
+    color: gray;
+}
+
+
+/*--------------------------------COL-DOS-------------*/
+
+form input::placeholder, textarea::placeholder{
+    color:rgb(138, 138, 138);
+}
+
+form input, textarea {
+    background-color: #f3f3f3;
+}
+
+form input:checked, textarea:checked{
+    background: white;
+    color:rgba(155, 155, 155, 0.7);
+}
+
+form button {
+    width: 100%;
+    color:white;
+    background: rgb(27, 143, 189);
+    
+}
+
+form button:hover{
+    color:white;
+    background: rgb(32, 121, 156);
+}
+
+h1{
+    position:relative;
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+h1:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:calc(50% - 50px);
+    width:100px;
+    border-bottom: 2px solid rgb(27, 143, 189);
+}
+
+.con {
+    font-size: 20px;
+    font-weight: 300;
+    color: gray;
+    text-align: center;
+    max-width: 550px;
+    margin: auto auto auto auto;
+}
+
