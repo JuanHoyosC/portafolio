@@ -1,37 +1,77 @@
+
+/*-----------------------Title-----------------------*/
+
 h1{
     position:relative;
     padding-bottom:10px;
-    margin-top:64px;
     font-weight: bold;
 }
 
-h1:after{
+h1:after {
     content: "";
     position: absolute;
-    bottom:0;
     left:calc(50% - 50px);
-    width:100px;
-    border-bottom: 1px solid rgb(27, 143, 189);
+    width: 100px;
+    border: 1px solid rgb(27, 143, 189);
+    bottom:0;
 }
 
-.card-service{
-    border:2px solid rgba(0,0,0,0.25);
-    width: 250px;
-    height: 400px;
-    padding:20px;
+/*-----------------------Sub-----------------------*/
+h2{
+    font-size:18px;
+    color:rgb(167, 167, 167);
 }
 
-.icon{
-    display:flex;
-    justify-content: center;
-}
-
-i{
-    color:rgb(27, 143, 189);
-    font-size:70px;
-    font-weight: lighter;
+h3{
+    color:rgb(80,80,80);
+    font-size:25px;
+    font-weight: 100;
 }
 
 p{
-    text-align: justify;
+    color:rgb(80,80,80);
+    font-size:16px;
+}
+
+/*-----------------------Card-service-----------------------*/
+.service{
+    border:1px solid rgba(0, 0, 0, 0.1);
+    height: 350px;
+    padding:30px;
+}
+
+.service:hover{
+    color:white;
+    background-color: rgba(158, 158, 158, 0.25);
+}
+
+
+.service:hover .service-info {
+    opacity:1;
+    transform: rotateX(0deg);
+}
+
+/*-----------------------Icons-----------------------*/
+.icon {
+    display:flex;
+    justify-content: center;
+}
+.icon i{
+    font-size:40px;
+    color:rgb(27, 143, 189);
+}
+
+/*-----------------------Service-Info-----------------------*/
+.service-info{
+    opacity:0;
+    transform:rotateX(90deg);
+    transition:ease 0.7s all;
+}
+
+@media (max-width: 720px) {
+
+    .service-info{
+        opacity:1;
+        transform:rotateX(0deg);
+    }
 }
