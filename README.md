@@ -8,5 +8,5 @@ Una vez clonado y en cualquier editor de su preferencia, pueden inicar el servic
 
 ##FrameWorks
 
-*Angular
-*Bootstrap
+-Angular
+-Bootstrap
